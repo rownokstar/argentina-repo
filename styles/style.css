@@ -12,7 +12,7 @@
 
 .button-hover:hover {
   transition-duration: 0.3s;
-  background-color: #75afe1;
+  background-color: #508bbe;
   transform: scale(1.1);
 }
 .button-hover-transition:hover > i {
@@ -191,6 +191,40 @@ main {
   object-fit: cover;
   object-position: top;
   border-radius: 0.6vh;
+}
+/*-----------GALLERY------------*/
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.heading-gallery {
+  font-size: 3.8rem;
+  margin: 1rem;
+  font-weight: 600;
+}
+.album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  position: relative;
+}
+.album-image {
+  display: inline-block;
+  width: 25rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.album-image:hover {
+  transform: scale(1.2);
+  z-index: 10;
 }
 
 /* Highlight */
